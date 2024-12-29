@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+  }
+  
+  .admin-dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    background-color: #be537d; /* Purple background */
+    width: 250px;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    height: 100%;
+  }
+  
+  .sidebar h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #be537d; /* Lighter purple on hover */
+  }
+  
+  .main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    color: #be537d; /* Purple color */
+  }
+  
+  .add-course-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .add-course-form h2 {
+    font-size: 24px;
+    color: #be537d; /* Purple color */
+    margin-bottom: 20px;
+  }
+  
+  .add-course-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .add-course-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-course-form button {
+    background-color: #be537d; /* Purple color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-course-form button:hover {
+    background-color: #9c4dcc; /* Lighter purple on hover */
+  }
+  
+  .courses-list {
+    margin-top: 40px;
+  }
+  
+  .courses-list h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  table th,
+  table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #be537d; /* Purple color */
+    color: white;
+    font-size: 18px;
+  }
+  
+  table td {
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #545454;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #545454;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+  
+    .main-content {
+      margin-left: 200px;
+      width: calc(100% - 200px);
+    }
+  
+    table th,
+    table td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar {
+      width: 150px;
+    }
+  
+    .main-content {
+      margin-left: 150px;
+      width: calc(100% - 150px);
+    }
+  
+    table th,
+    table td {
+      font-size: 12px;
+      padding: 6px;
+    }
+  }
+  

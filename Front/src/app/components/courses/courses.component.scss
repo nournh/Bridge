@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fa;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  height: 50px;
+}
+
+.hero-section {
+  
+  background-image: url('http://localhost:9090/images/bridge.png'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-buttons .btn {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+.courses-section {
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.contact-section {
+  background-color: #f8f9fa;
+}
+
+.contact-form {
+  max-width: 600px;
+}
+
+.contact-form .form-control {
+  border-radius: 30px;
+  padding: 15px 20px;
+}
+
+.contact-form textarea {
+  border-radius: 15px;
+}
+
+.register-btn button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn button:hover {
+  background-color: #45a049;
+}
